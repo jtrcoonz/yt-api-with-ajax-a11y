@@ -40,19 +40,11 @@ function renderResult(result) {
   <div class="search-result">
   <a href="https://www.youtube.com/watch?v=${result.id.videoId}" target="_blank">
     <h3>${result.snippet.title}</h3>
-    <img src="${result.snippet.thumbnails.medium.url}" class="yt-thumbnail">
+    <img src="${result.snippet.thumbnails.medium.url}" alt="Video thumbnnail that links to ${result.snippet.title}" 
+    class="yt-thumbnail">
   </a>
   <p>${result.snippet.description}</p>
   </div>
   `;
 }
-    
-    
-    
-    
-    /* by <a class="js-user-name" href="${item.owner.html_url}" target="_blank">${item.owner.login}</a></h2>
-      <p>Number of watchers: <span class="js-watchers-count">${item.watchers_count}</span></p>
-      <p>Number of open issues: <span class="js-issues-count">${item.open_issues}</span></p>
-    </div> 
-  `;
-} */
+
